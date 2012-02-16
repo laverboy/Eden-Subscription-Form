@@ -1,5 +1,5 @@
 Eden Subscription Form
-======================
+----------------------
 
 This is, hopefully, a simple subscription form for use by the [Eden Network](http://eden-network.org) whilst presenting at stands and events.
 
