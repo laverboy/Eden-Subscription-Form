@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Local Storage Test</title>
+	<meta name="description" content="A Local storage form and display">
+	<meta name="author" content="Matthew Laver">
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+	<a id="admin" href="#"></a>
+	<div id="container">
+		<span id="alert" style="display:none;"></span>
+		<span id="logo"></span>
+		<header>
+			<h1>Sign Up <span>Now</span></h1>
+		</header>
+		
+		<div id="main">
+    
+    	<!-- ========== the Form ============================== -->
+			<form method="post" id="subForm">
+				<div class="input">
+					<input tabindex="1" type="email" name="email" id="email" placeholder="Email" required>
+				</div>		
+				<div class="input">
+					<input tabindex="2" type="text" name="firstname" id="firstname" placeholder="First Name" required>
+				</div>
+				<div class="input">
+					<input tabindex="3" type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+				</div>
+				<div class="input">
+					<button type="submit" id="submit" class="orange">Subscribe</button>
+<!-- 					<input tabindex="20" type="submit" value="Subscribe" id="submit"> -->
+				</div>
+				<div id="checkboxes">
+					<p><input tabindex="4" type="checkbox" value="True" name="natvis" id="natvis" checked="checked">
+					<label for="natvis">National Vision</label><br /></p>
+					
+					<p><input tabindex="5" type="checkbox" value="True" name="london" id="london">
+					<label for="london">London</label></p>
+					
+					<p><input tabindex="6" type="checkbox" value="True" name="eastmid" id="eastmid">
+					<label for="eastmid">East Midlands</label></p>
+					
+					<p><input tabindex="7" type="checkbox" value="True" name="westmid" id="westmid">
+					<label for="westmid">West Midlands</label></p>
+					
+					<p><input tabindex="8" type="checkbox" value="True" name="manchester" id="manchester">
+					<label for="manchester">Manchester</label></p>
+	
+					<p><input tabindex="9" type="checkbox" value="True" name="mersey" id="mersey">
+					<label for="mersey">Merseyside</label></p>
+					
+					<p><input tabindex="10" type="checkbox" value="True" name="swales" id="swales">
+					<label for="swales">South Wales</label></p>
+					
+					<p><input tabindex="11" type="checkbox" value="True" name="neast" id="neast">
+					<label for="neast">North East</label></p>
+					
+					<p><input tabindex="12" type="checkbox" value="True" name="yorks" id="yorks">
+					<label for="yorks">Yorkshire</label></p>
+					
+					<p><input tabindex="13" type="checkbox" value="True" name="humb" id="humb">
+					<label for="humb">Humber</label></p>
+				</div>
+				<a id="more" href="#" style="display:block;clear:both;text-align:right; margin-right: 54px; color: #fff; text-decoration: none;padding-top:20px;padding-bottom:5px;"><span>More</span><span style="display:none;">Less</span></a>
+				<div id="address">
+					<div class="input">
+						<input tabindex="15" type="text" name="address1" id="address1" placeholder="Address Line 1" >
+					</div>		
+					<div class="input">
+						<input tabindex="16" type="text" name="address2" id="address2" placeholder="Address Line 2" >
+					</div>
+					<div class="input">
+						<input tabindex="17" type="text" name="city" id="city" placeholder="City" >
+					</div>
+					<div class="input">
+						<input tabindex="18" type="text" name="pcode" id="pcode" placeholder="Post Code" >
+					</div>
+					<div class="input">
+						<select name="pack" id="pack">
+							<option>London</option>
+							<option>East Midlands</option>
+							<option>West Midlands</option>
+							<option>Manchester</option>
+							<option>Merseyside</option>
+							<option>South Wales</option>
+							<option>North East</option>
+							<option>Yorkshire</option>
+							<option>Humber</option>
+						</select>
+					</div>
+				</div>
+			</form>	
+			<div style="clear:both;"
+	    </div>
+	    
+	    <div id="adminScreen" style="display:none;">
+	    	<h2>Admin Options</h2>
+	    	<p>Please be careful here, you don't want to lose all your data!</p>
+	    	<p>
+	    		<button class="orange" type="button" id="download">Download CSV</button>
+	    		<button class="red" type="button" id="clear">Clear All</button>
+	    		<button class="orange" type="button" id="cancel">Cancel</button>
+	    		
+	    	</p>
+	    </div>
+	    <footer>
+	
+	    </footer>
+	</div> <!--! end of #container -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/form.js"></script>
+  
+</body>
+</html>
