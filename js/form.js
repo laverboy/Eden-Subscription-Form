@@ -48,9 +48,7 @@ $(document).ready(function(){
 		
 		function adminScreen () {
 			$('#adminScreen').fadeIn('slow');
-			$('#download').on('click', function () {
-				window.open('data:text/csv;base64,' + window.btoa(storeToCSV()));
-			});
+			$('#download').attr('href', 'data:text/csv;charset=UTF-8,' + encodeURIComponent(storeToCSV()) );
 		}
 
 		$.fn.serializeJSON = function () {
